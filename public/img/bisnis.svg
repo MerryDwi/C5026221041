@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+    <path style="stroke:none;fill-rule:nonzero;fill:#000;fill-opacity:1" d="M25.332 4H6.668A2.674 2.674 0 0 0 4 6.668v18.664C4 26.801 5.2 28 6.668 28h18.664C26.801 28 28 26.8 28 25.332V6.668C28 5.199 26.8 4 25.332 4Zm0 21.332H6.668V6.668h18.664Zm0 0"/>
+    <path style="stroke:none;fill-rule:nonzero;fill:#000;fill-opacity:1" d="M9.332 16H12v6.668H9.332ZM20 9.332h2.668v13.336H20ZM14.668 18.668h2.664v4h-2.664ZM14.668 13.332h2.664V16h-2.664Zm0 0"/>
+</svg>

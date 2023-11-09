@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Karla', sans-serif;
+    position: relative;
+
+
+}
+:root {
+    --background-color : #222;
+    --accent-color: rgb(103, 103, 203);
+    ;
+}
+body{
+    background-color:var(--background-color) ;   
+    font-family:  'Karla', sans-serif;
+}
+.link-tree a{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color:var(--accent-color);
+    width: 100%;
+    padding: 20px; 
+    margin: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: solid 2px var(--accent-color);
+    border-radius: 40px;
+}
+.link a:hover{
+    background-color: azure;
+    
+    
+}
+@media screen and (min-width: 1024px) {
+    .link-tree{
+        width: 40vw;
+        font-size: 1.5rem;
+    }
+}
+.link > a{
+    text-decoration: none;
+    color: rgb(103, 103, 203);
+    
+}
+.profpicture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    
+}
+.profpicture>img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #222;
+    border-radius: 50%;
+   
+
+}
+.footer{
+    text-align: center;
+   
+}
+footer >a{
+    color: #fff;
+
+
+}
+.subscribe{
+    border-radius: 40px;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 50;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+.subscribe{
+    background: black;
+    color: #fff;
+}
+.subscribe:hover{
+    background: rgb(103, 103, 203);
+}
+.titik{
+    background: black;
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+}
+.titik:hover{
+    background: rgb(103, 103, 203);
+}
+
+    /* padding digunakan untuk memberikan jarak 
+    /* width penting kalo dihapus dia akan lebarnya satu halaman web
+
+   
+}

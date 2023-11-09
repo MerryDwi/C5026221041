@@ -1,0 +1,469 @@
+/* atur navbar  */
+.nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+/* atur effect hover pada navbar */
+.nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #0C7075;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+
+}
+/* atur posisi introduction */
+.introduction{
+    margin-top: 80px;
+}
+
+/* atur tombol */
+.tombol {
+    text-transform: uppercase;
+    border-color: black;
+}
+
+/* Atur font - title  */
+.font-title {
+    font-size: 80px;
+
+}
+
+/* atur font - header */
+.font-header {
+    font-size: 20px;
+    margin-right: 250px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+
+.btn-primary {
+    margin-bottom: 40px;
+}
+
+
+.text-title {
+    font-size: 20px;
+}
+
+.text-sub {
+    font-size: 40px;
+    margin-bottom: 15px;
+    margin-right: 60px;
+    text-align: left;
+}
+
+.text-content {
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 40px;
+}
+.outer{
+    margin-top: 25px;
+}
+
+.text-content1 {
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 40px;
+}
+
+.text-special {
+    margin-top: 60px;
+    font-size: 40px;
+    margin-right: 120px;
+
+}
+
+.content-special {
+    text-align: justify;
+    font-size: 22px;
+    margin-top: 65px;
+}
+
+.sub-content {
+    font-size: 40px;
+    margin-bottom: 15px;
+
+
+}
+.content{
+    font-size: 15px;
+}
+
+
+.img-fluid {
+    border-radius: 15px;
+
+}
+
+.img-text {
+    width: 100%;
+    height: 30px;
+    display: block;
+    text-align: center;
+    padding: 40% 5%;
+    background: #262626;
+    color: #fff;
+    border-radius: 15px;
+
+}
+
+.img-text h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.img-text p {
+    font-size: 14px;
+}
+.text a{
+    color: #0C7075;
+}
+.single-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.img-area {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid#fff;
+    overflow: hidden;
+    top: 15px;
+    left: 125px;
+    border-radius: 50%;
+}
+
+.img-area img {
+    width: 100%;
+
+}
+
+.carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -70px;
+
+}
+
+.carousel-indicators li {
+    background: #000;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+
+}
+
+.carousel-indicators .active {
+    background: #fff;
+
+}
+.myclass{
+    margin-bottom: 100px;
+}
+.bg-body{
+    background: #0C7075;
+
+}
+
+.col-lg-2 {
+    margin-top: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img {
+    width: 50%;
+    filter: grayscale(100);
+    transition: all 0.4 ease-in-out;
+    display: inline-block;
+    padding: 10px 0;
+}
+.img:hover{
+    filter: none;
+    transform: scale(1,1);
+}
+.section-title {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .section-title h6 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: #222222;
+  }
+
+  .section-title h6::before,
+  .section-title h6::after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background: #000;
+    display: inline-block;
+  }
+
+  .section-title h6::before {
+    margin: 0 15px 10px 0;
+  }
+
+  .section-title h6::after {
+    margin: 0 0 10px 15px;
+  }
+
+  .section-title p {
+    margin: 15px 0 0 0;
+  }
+
+  /* Section-title1 */
+  .section-title1 {
+    padding-bottom: 5px;
+  }
+
+  .section-title1 h6 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: #0C7075;
+  }
+
+  .section-title1 h6::before,
+  .section-title1 h6::after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background: #0C7075;
+    display: inline-block;
+  }
+
+  .section-title1 h6::before {
+    margin: 0 15px 10px 0;
+  }
+
+  .section-title1 h6::after {
+    margin: 0 0 10px 15px;
+  }
+
+  .section-title1 p {
+    margin: 15px 0 0 0;
+  }
+/* button watch video  */
+.myclass {
+    text-align: center;
+}
+.myclass1{
+    margin-top: -30px;
+    text-align: center;
+}
+/* atur section subcribe */
+.subscribe{
+    margin-top: 20px;
+}
+
+.info-panel{
+    background-color: #000;
+    height: 350px;
+    border-radius: 10px;
+}
+/* atur subcribe button */
+.box{
+    display: flex;
+    justify-content: left;
+    height: 100vh;
+    box-sizing: border-box;
+    margin-top: 15px;
+
+}
+.form-box{
+    padding: 10px;
+    border-radius: 5px;
+    background: #e9e9e9;
+    box-shadow: 0px 0px 0.5px #fff;
+
+
+}
+.form-box input{
+    font-size: 15px;
+    color: #000;
+    padding: 3px 3px;
+    width: 300px;
+    border: none;
+    outline: none;
+    background: #e9e9e9;
+}
+.form-box button{
+    color:#fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    background: #0C7075;
+    cursor: pointer;
+    transition: .3s;
+}
+.form-box button:hover{
+    background: #15afb7;
+
+}
+/* atur text */
+.text{
+    color: #fff;
+}
+.text href{
+    color: #0C7075;
+}
+
+/* card testimoni */
+
+.testimonials-section{
+    width: 100%;
+    padding: 0px 8%;
+
+}
+.profile-image img{
+    max-width: 55px;
+    height: 55px;
+}
+.testimonials-section .section-header{
+    max-width: 700px;
+    text-align: center;
+    margin: 30px auto 40px;
+
+}
+.section-header h1{
+    position: relative;
+    font-size: 36px;
+    color: #0C7075;
+    text-align: center;
+}
+.testimonials-container{
+    position: relative;
+}
+.testimonials-container .testimonial-card{
+    padding: 20px;
+}
+.testimonial-card .test-card-body{
+    background-color: #fff;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+}
+
+.test-card-body p{
+    margin: 10px 0px 5px;
+    font-size: 14px;
+    line-height: 1.5;
+
+
+}
+
+.testimonial-card .profile{
+	display: flex;
+	align-items: center;
+	margin-top: 25px;
+}
+.profile .profile-image{
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 15px;
+}
+.profile .profile-image img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.profile .profile-desc{
+	display: flex;
+	flex-direction: column;
+}
+.profile-desc span:nth-child(1){
+	font-size: 24px;
+	font-weight: bold;
+	color: var(--primary-clr);
+}
+.profile-desc span:nth-child(2){
+	font-size: 15px;
+	color: var(--text-clr);
+}
+.owl-nav{
+	position: absolute;
+	right: 20px;
+	bottom: -10px;
+}
+.owl-nav button{
+	border-radius: 50% !important;
+}
+.owl-nav .owl-prev i,
+.owl-nav .owl-next i{
+	padding: 10px !important;
+	border-radius: 50%;
+	font-size: 18px !important;
+	background-color: var(--card-clr) !important;
+	color: var(--primary-clr);
+	cursor: pointer;
+	transition: 0.4s;
+}
+.owl-nav .owl-prev i:hover,
+.owl-nav .owl-next i:hover{
+	background-color: var(--primary-clr) !important;
+	color: #e9e9e9;
+}
+.owl-dots{
+	margin-top: 15px;
+    border-inline-color: #000;
+}
+.owl-dots .owl-dot span{
+	background-color: #434753 !important;
+	padding: 6px !important;
+}
+.owl-dot.active span{
+	background-color: var(--primary-clr) !important;
+}
+/* membuat footer */
+#footer-info{
+    background: #000;
+}
+#footer-info a{
+    color: #fff;
+}
+#footer a:hover, nav .links a:hover{
+    color: #2eced6 !important;
+
+}
+#footer-info .sosmed-icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+#footer-info .text-darkgreen{
+    color: #fff;
+}
+.tutup{
+    background: #0C7075;
+}
+
+
+
+
+
