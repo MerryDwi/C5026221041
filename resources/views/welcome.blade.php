@@ -25,8 +25,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#" data-target="aboutus">About Us<span
-                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="#" data-target="aboutus">About Us</a>
                     <a class="nav-item nav-link" href="#">Services</a>
                     <a class="nav-item nav-link" href="#">Video</a>
                     <a class="nav-item nav-link" href="#">Testimonies</a>
