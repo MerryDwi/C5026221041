@@ -101,3 +101,10 @@ Route::get('showjam/{jam}', 'App\Http\Controllers\DosenController@showtime');
 Route::get('formulir', 'App\Http\Controllers\DosenController@formulir');
 Route::post("/formulir/proses", 'App\Http\Controllers\DosenController@proses');
 
+//route CRUD
+Route::get('/pegawai','App\Http\Controllers\pegawaicontroller@index');
+Route::get('/pegawai/tambah','App\Http\Controllers\pegawaicontroller@tambah');
+Route::post('/pegawai/store','App\Http\Controllers\pegawaicontroller@store');
+Route::get('/pegawai/edit/{id}','App\Http\Controllers\pegawaicontroller@edit');
+Route::post('/pegawai/update','App\Http\Controllers\pegawaicontroller@update');
+Route::get('/pegawai/hapus/{id}','App\Http\Controllers\pegawaicontroller@hapus');
