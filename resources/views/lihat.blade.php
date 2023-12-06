@@ -24,29 +24,26 @@
                         <div class="form-group row">
                             <label for="nama" class="col-md-2">Nama</label>
                             <div class="col-md-10">
-                                <input type="text" readonly class="form-control" id="nama"
-                                    name="nama" value="{{ $p->pegawai_nama }}">
+                                <label>: {{ $p->pegawai_nama }}</label>
+
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="jabatan" class="col-md-2">Jabatan</label>
                             <div class="col-md-10">
-                                <input type="text" readonly class="form-control" id="Jabatan"
-                                    name="jabatan" value="{{ $p->pegawai_jabatan }}">
+                                 <label>: {{ $p->pegawai_jabatan }}</label>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="umur" class="col-md-2">Umur</label>
                             <div class="col-md-10">
-                                <input type="text" readonly class="form-control" id="umur"
-                                    name="umur" value="{{ $p->pegawai_umur }}">
+                                <label>: {{ $p->pegawai_umur }}</label>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="alamat" class="col-md-2">Alamat</label>
                             <div class="col-md-10">
-                                <input type="text" readonly class="form-control" id="alamat"
-                                    name="alamat" value="{{ $p->pegawai_alamat }}">
+                                <label>: {{ $p->pegawai_alamat }}</label>
                             </div>
                         </div>
 
