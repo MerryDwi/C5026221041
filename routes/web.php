@@ -102,6 +102,13 @@ Route::get('formulir', 'App\Http\Controllers\DosenController@formulir');
 Route::post("/formulir/proses", 'App\Http\Controllers\DosenController@proses');
 
 //route CRUD
+Route::get('/keranjangbelanja','App\Http\Controllers\BelanjaController@index1');
+Route::post('/keranjangbelanja/store','App\Http\Controllers\BelanjaController@store');
+Route::get('/keranjangbelanja/beli','App\Http\Controllers\BelanjaController@beli');
+Route::get('/keranjangbelanja/hapus/{ID}','App\Http\Controllers\BelanjaController@hapus');
+
+
+//route CRUD Pegawai
 Route::get('/pegawai','App\Http\Controllers\pegawaicontroller@index');
 Route::get('/pegawai/tambah','App\Http\Controllers\pegawaicontroller@tambah');
 Route::post('/pegawai/store','App\Http\Controllers\pegawaicontroller@store');

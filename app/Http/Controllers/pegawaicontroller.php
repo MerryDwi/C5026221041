@@ -98,6 +98,15 @@ class PegawaiController extends Controller
 		return view('lihat',['pegawai' => $pegawai]);
 
 	}
+    public function index1()
+    {
+    	// mengambil data dari table pegawai
+    	$keranjangbelanja = DB::table('keranjangbelanja')->get();
+
+    	// mengirim data pegawai ke view index
+    	return view('index1',['keranjangbelanja' => $keranjangbelanja]);
+
+    }
 
 
 }
