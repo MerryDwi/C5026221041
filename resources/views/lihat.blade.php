@@ -22,28 +22,28 @@
                 <div class="col-6">
                     <ul>
                         <div class="form-group row">
-                            <label for="nama" class="col-md-2">Nama</label>
+                            <label for="nama" class="col-md-2"><b>Nama</b></label>
                             <div class="col-md-10">
-                                <label>: {{ $p->pegawai_nama }}</label>
+                                <label>:    {{ $p->pegawai_nama }}</label>
 
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="jabatan" class="col-md-2">Jabatan</label>
+                            <label for="jabatan" class="col-md-2"><b>Jabatan</b></label>
                             <div class="col-md-10">
-                                 <label>: {{ $p->pegawai_jabatan }}</label>
+                                 <label>:   {{ $p->pegawai_jabatan }}</label>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="umur" class="col-md-2">Umur</label>
+                            <label for="umur" class="col-md-2"><b>Umur</b></label>
                             <div class="col-md-10">
-                                <label>: {{ $p->pegawai_umur }}</label>
+                                <label>:    {{ $p->pegawai_umur }}</label>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="alamat" class="col-md-2">Alamat</label>
+                            <label for="alamat" class="col-md-2"><b>Alamat</b></label>
                             <div class="col-md-10">
-                                <label>: {{ $p->pegawai_alamat }}</label>
+                                <label>:    {{ $p->pegawai_alamat }}</label>
                             </div>
                         </div>
 
