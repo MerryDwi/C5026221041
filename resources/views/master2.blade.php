@@ -18,10 +18,10 @@
         <!-- Links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Link 1</a>
+            <a class="nav-link" href="#">Pegawai</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link 2</a>
+            <a class="nav-link" href="#">Tugas Pra-UAS</a>
           </li>
 
           <!-- Dropdown -->
@@ -31,8 +31,8 @@
             </a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="/pegawai">Pegawai</a>
-              <a class="dropdown-item" href="#">Link 2</a>
-              <a class="dropdown-item" href="#">Link 3</a>
+              <a class="dropdown-item" href="/keranjangbelanja">belanja</a>
+              <a class="dropdown-item" href="/tokoberas">Toko Beras</a>
             </div>
           </li>
         </ul>

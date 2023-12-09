@@ -101,12 +101,17 @@ Route::get('showjam/{jam}', 'App\Http\Controllers\DosenController@showtime');
 Route::get('formulir', 'App\Http\Controllers\DosenController@formulir');
 Route::post("/formulir/proses", 'App\Http\Controllers\DosenController@proses');
 
-//route CRUD
+//route CRUD belanja
 Route::get('/keranjangbelanja','App\Http\Controllers\BelanjaController@index1');
 Route::post('/keranjangbelanja/store','App\Http\Controllers\BelanjaController@store');
 Route::get('/keranjangbelanja/beli','App\Http\Controllers\BelanjaController@beli');
 Route::get('/keranjangbelanja/hapus/{ID}','App\Http\Controllers\BelanjaController@hapus');
 
+//route CRUD tokeberas
+Route::get('/tokoberas','App\Http\Controllers\BerasController@index2');
+Route::post('/tokoberas/store','App\Http\Controllers\BerasController@store');
+Route::get('/tokoberas/beliBeras','App\Http\Controllers\BerasController@beliBeras');
+Route::get('/tokoberas/hapus/{ID}','App\Http\Controllers\BerasController@hapus');
 
 //route CRUD Pegawai
 Route::get('/pegawai','App\Http\Controllers\pegawaicontroller@index');
