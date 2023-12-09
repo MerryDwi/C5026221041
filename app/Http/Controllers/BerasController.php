@@ -29,7 +29,26 @@ class BerasController extends Controller
 		DB::table('tokoberas')->insert([
 			'merkBeras' => $request->merkBeras,
 			'stockBeras' => $request->stockBeras,
+			'tersedia' => $request->Stok > 0 ? '1' : '0'
+		]);
+		// alihkan halaman ke halaman pegawai
+		return redirect('/tokoberas');
+	}
+    public function edit($KodeBeras)
+	{
+		// mengambil data pegawai berdasarkan id yang dipilih
+		$tokoberas = DB::table('tokoberas')->where('KodeBeras',$KodeBeras)->get();
+		// passing data pegawai yang didapat ke view edit.blade.php
+		return view('editBeras',['tokoberas' => $tokoberas]);
+	}
+    public function update(Request $request)
+	{
+		// update data pegawai
+		DB::table('tokoberas')->where('KodeBeras',$request->KodeBeras)->update([
+			'merkBeras' => $request->merkBeras,
+			'stockBeras' => $request->stockBeras,
 			'tersedia' => $request->tersedia
+
 		]);
 		// alihkan halaman ke halaman pegawai
 		return redirect('/tokoberas');
@@ -44,4 +63,5 @@ class BerasController extends Controller
 		// alihkan halaman ke halaman pegawai
 		return redirect('/tokoberas');
 	}
+    
 }

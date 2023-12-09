@@ -26,9 +26,13 @@
                 <td>{{ $b->merkBeras }}</td>
                 <td>{{ $b->stockBeras }}</td>
                 <td>{{ $b->tersedia }}</td>
-               
-                <td  class="btn-group">
+                {{-- <td class="align-middle">
+                    <input type="checkbox" disabled {{ $b->tersedia == '1' ? 'checked' : '' }}>
+                </td> --}}
 
+                <td  class="btn-group">
+                    <a href="/tokoberas/edit/{{ $b->KodeBeras }}" class="btn btn-primary  ">Edit</a>
+                    ||
                     <a href="/tokoberas/hapus/{{ $b->KodeBeras }}" class="btn btn-danger  ">Batal</a>
                 </td>
             </tr>
