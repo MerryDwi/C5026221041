@@ -26,12 +26,12 @@
                 <input name="stockBeras" type="text" class="form-control" id="stockBeras" placeholder="Masukkan Jumlah Stock">
             </div>
         </div>
-        <div class="form-group row">
+        {{-- <div class="form-group row">
             <label class="col-md-2" for="jabatan">Tersedia</label>
             <div class="col-md-10">
                 <input name="tersedia" type="text" class="form-control" id="tersedia" placeholder="Masukkan Jumlah keterangan">
             </div>
-        </div>
+        </div> --}}
         <input type="submit" value="Simpan Data" class="ml-auto btn btn-primary">
     </form>
 @endsection

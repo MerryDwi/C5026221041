@@ -9,7 +9,7 @@
     @foreach($tokoberas as $b)
     <form action="/tokoberas/update" method="post" class="form-horizontal">
 		{{ csrf_field() }}
-        <input type="hidden" name="id" value="{{ $b->KodeBeras }}"> <br/>
+        <input type="hidden" name="KodeBeras" value="{{ $b->KodeBeras }}"> <br/>
 
         <div class="form-group row">
             <label for="merkBeras" class="col-sm-2 col-form-label">Merk Beras</label>
@@ -19,9 +19,15 @@
         </div>
 
         <div class="form-group row">
-            <label for="StokBeras" class="col-sm-2 col-form-label">Stok Beras</label>
+            <label for="stockBeras" class="col-sm-2 col-form-label">Stok Beras</label>
             <div class="col-sm-9">
-                <input type="text" class="form-control" required="required" name="StokBeras" value="{{ $b->stockBeras }}">
+                <input type="text" class="form-control" required="required" name="stockBeras" value="{{ $b->stockBeras }}">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="tersedia" class="col-sm-2 col-form-label">Tersedia</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" required="required" name="tersedia" value="{{ $b->tersedia }}">
             </div>
         </div>
 

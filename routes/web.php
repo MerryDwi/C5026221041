@@ -112,8 +112,10 @@ Route::get('/tokoberas','App\Http\Controllers\BerasController@index2');
 Route::post('/tokoberas/store','App\Http\Controllers\BerasController@store');
 Route::get('/tokoberas/beliBeras','App\Http\Controllers\BerasController@beliBeras');
 Route::get('/tokoberas/hapus/{ID}','App\Http\Controllers\BerasController@hapus');
-Route::get('/tokoberas/edit/{id}','App\Http\Controllers\Berascontroller@edit');
+Route::get('/tokoberas/edit/{KodeBeras}','App\Http\Controllers\Berascontroller@edit');
 Route::post('/tokoberas/update','App\Http\Controllers\Berascontroller@update');
+Route::get('/tokoberas/cari','App\Http\Controllers\BerasController@cari');
+Route::get('/tokoberas/viewBeras/{KodeBeras}','App\Http\Controllers\BerasController@viewberas');
 
 //route CRUD Pegawai
 Route::get('/pegawai','App\Http\Controllers\pegawaicontroller@index');

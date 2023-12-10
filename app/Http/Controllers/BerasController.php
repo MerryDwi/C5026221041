@@ -29,7 +29,7 @@ class BerasController extends Controller
 		DB::table('tokoberas')->insert([
 			'merkBeras' => $request->merkBeras,
 			'stockBeras' => $request->stockBeras,
-			'tersedia' => $request->Stok > 0 ? '1' : '0'
+            'tersedia' => $request->stockBeras > 0 ? 't' : 'N'
 		]);
 		// alihkan halaman ke halaman pegawai
 		return redirect('/tokoberas');
@@ -47,7 +47,7 @@ class BerasController extends Controller
 		DB::table('tokoberas')->where('KodeBeras',$request->KodeBeras)->update([
 			'merkBeras' => $request->merkBeras,
 			'stockBeras' => $request->stockBeras,
-			'tersedia' => $request->tersedia
+            'tersedia' => $request->stockBeras > 0 ? 't' : 'N',
 
 		]);
 		// alihkan halaman ke halaman pegawai
@@ -63,5 +63,27 @@ class BerasController extends Controller
 		// alihkan halaman ke halaman pegawai
 		return redirect('/tokoberas');
 	}
-    
+    public function viewberas($KodeBeras)
+	{
+    	// mengambil data pegawai berdasarkan id yang dipilih
+		$tokoberas = DB::table('tokoberas')->where('KodeBeras',$KodeBeras)->get();
+		// passing data pegawai yang didapat ke view edit.blade.php
+		return view('viewBeras',['tokoberas' => $tokoberas]);
+
+	}
+    public function cari(Request $request)
+	{
+		// menangkap data pencarian
+		$cari = $request->cari;
+
+    		// mengambil data dari table pegawai sesuai pencarian data
+		$tokoberas = DB::table('tokoberas')
+		->where('merkBeras','like',"%".$cari."%")
+        ->paginate();;
+
+    		// mengirim data pegawai ke view index
+		return view('index2',['tokoberas' => $tokoberas, 'cari' => $cari]);
+
+	}
+
 }
