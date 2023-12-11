@@ -117,6 +117,16 @@ Route::post('/tokoberas/update','App\Http\Controllers\Berascontroller@update');
 Route::get('/tokoberas/cari','App\Http\Controllers\BerasController@cari');
 Route::get('/tokoberas/viewBeras/{KodeBeras}','App\Http\Controllers\BerasController@viewberas');
 
+//route CRUD chat
+Route::get('/chat','App\Http\Controllers\ChatController@index3');
+Route::post('/chat/store','App\Http\Controllers\ChatController@store');
+Route::get('/chat/tambahChat','App\Http\Controllers\ChatController@tambahChat');
+Route::get('/chat/hapus/{ID}','App\Http\Controllers\ChatController@hapus');
+Route::get('/chat/edit/{id}','App\Http\Controllers\Chatcontroller@edit');
+Route::post('/chat/update','App\Http\Controllers\Chatcontroller@update');
+Route::get('/chat/cari','App\Http\Controllers\ChatController@cari');
+Route::get('/chat/viewChat/{id}','App\Http\Controllers\ChatController@viewChat');
+
 //route CRUD Pegawai
 Route::get('/pegawai','App\Http\Controllers\pegawaicontroller@index');
 Route::get('/pegawai/tambah','App\Http\Controllers\pegawaicontroller@tambah');
