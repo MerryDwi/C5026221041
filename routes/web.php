@@ -126,6 +126,7 @@ Route::get('/chat/edit/{id}','App\Http\Controllers\Chatcontroller@edit');
 Route::post('/chat/update','App\Http\Controllers\Chatcontroller@update');
 Route::get('/chat/cari','App\Http\Controllers\ChatController@cari');
 Route::get('/chat/viewChat/{id}','App\Http\Controllers\ChatController@viewChat');
+Route::get('/chat','App\Http\Controllers\ChatController@halamanchat');
 
 //route CRUD Pegawai
 Route::get('/pegawai','App\Http\Controllers\pegawaicontroller@index');

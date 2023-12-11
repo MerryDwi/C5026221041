@@ -1,39 +1,37 @@
 @extends('master2')
-@section('judulhalaman', 'View Pesan')
+@section('judulhalaman','Data Chat')
 
 @section('konten')
+	<h3>Data Chat</h3>
 
-    <h1 class="title p-3 text-center">View Hasil Pesan</h1>
-
-    @foreach ($chat as $c)
-    <form action="/chat/store" method="post" class="form-horizontal">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <div class="row">
-                        <div class="card" style="width:1500px">
-                            <img class="gambar 1" src="pictures 1" alt="Foto Produk">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="card" style="width:1500px">
-                            <img class="gambar 2" src="pictures 2" alt="Foto Produk">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="card" style="width:1500px">
-                            <img class="gambar 3" src="pictures 3" alt="Foto Produk">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="card" style="width:1500px">
-                            <img class="gambar 4" src="pictures 4" alt="Foto Produk">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </form>
+	@foreach ($chat as $c)
+    @php
+        $words = explode(' ', $c->pesan);
+    @endphp
+    @foreach ($words as $word)
+        @switch($word)
+            @case(':))')
+                <img src="{{ asset('1.png') }}" alt=":))">
+                @break
+            @case(':3')
+                <img src="{{ asset('2.png') }}" alt=":3">
+                @break
+            @case(':P')
+                <img src="{{ asset('3.png') }}" alt=":P">
+                @break
+            @case(':C')
+                <img src="{{ asset('4.png') }}" alt=":C">
+                @break
+            @case(';)')
+                <img src="{{ asset('5.png') }}" alt=";)">
+                @break
+            @default
+                {{ $word }}
+        @endswitch
+        {{-- Add space after each word --}}
+        &nbsp;
     @endforeach
+@endforeach
+
 @endsection
+

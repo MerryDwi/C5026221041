@@ -85,21 +85,11 @@ class ChatController extends Controller
 		return view('index3',['chat' => $chat, 'cari' => $cari]);
 
 	}
-    public function explode1(){
-        $string = "::)) pada suatu hari :3 ketika pergi kepasar :p ,bertemu penjual :C es cendol ;)";
-        $delimiter = "::)), :3, :p, ;), :C";
-
-// Memecah string menjadi array berdasarkan delimiter
-         $array_result = explode($delimiter, $string);
-
-// Mengganti nilai array dengan gambar a, gambar b, dan gambar c
-        $array_result[0] = "gambar 1";
-        $array_result[4] = "gambar 2";
-        $array_result[11] = "gambar 3";
-        $array_result[14] = "gambar 4";
-
-// Menggabungkan array kembali menjadi string
-        $new_string = implode("", $array_result);
-    }
-
+	public function halamanchat()
+	{
+		// mengambil data dari table chat
+		$chat = DB::table('chat')->get();
+		// mengirim data chat ke view halamanchat
+		return view('script',['chat' => $chat]);
+	}
 }
